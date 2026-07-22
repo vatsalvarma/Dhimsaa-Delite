@@ -321,7 +321,7 @@ export const Vision: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-[#090909]/60 via-transparent to-transparent z-10 pointer-events-none" />
               <img 
                 ref={visionImageRef}
-                src="/assets/vision_bg.png" 
+                src="./assets/vision_bg.png" 
                 alt="Tribal Cafe Interior"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -348,7 +348,7 @@ export const Vision: React.FC = () => {
             <div className="absolute top-[5%] right-[5%] w-[65%] aspect-square rounded-full overflow-hidden border-4 border-[#241713] shadow-2xl z-10">
               <img 
                 ref={storyImg1Ref}
-                src="/assets/story_main.png" 
+                src="./assets/story_main.png" 
                 alt="Tribal Tree Sculpture"
                 className="w-full h-full object-cover scale-[1.3]"
               />
@@ -358,7 +358,7 @@ export const Vision: React.FC = () => {
             <div className="absolute bottom-[15%] left-[5%] w-[45%] aspect-square rounded-full overflow-hidden border-4 border-[#241713] shadow-2xl z-20">
               <img 
                 ref={storyImg2Ref}
-                src="/assets/story_sub1.png" 
+                src="./assets/story_sub1.png" 
                 alt="Warli Murals"
                 className="w-full h-full object-cover scale-[1.3]"
               />
@@ -368,7 +368,7 @@ export const Vision: React.FC = () => {
             <div className="absolute bottom-[5%] right-[15%] w-[35%] aspect-square rounded-full overflow-hidden border-4 border-[#241713] shadow-2xl z-30">
               <img 
                 ref={storyImg3Ref}
-                src="/assets/story_sub2.png" 
+                src="./assets/story_sub2.png" 
                 alt="Tribal Archway"
                 className="w-full h-full object-cover scale-[1.3]"
               />
@@ -427,7 +427,7 @@ export const Vision: React.FC = () => {
             <div className="w-[70%] md:w-[60%] lg:w-[75%] aspect-square rounded-full overflow-hidden shadow-2xl relative border-4 border-[#171717]">
               <img 
                 ref={siteImageRef}
-                src="/assets/site_image.png" 
+                src="./assets/site_image.png" 
                 alt="Beachfront Bamboo Sculpture"
                 className="w-full h-full object-cover scale-[1.3]"
               />
@@ -479,7 +479,7 @@ export const Vision: React.FC = () => {
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img 
             ref={towerBgRef}
-            src="/assets/cafe_bg.png"
+            src="./assets/cafe_bg.png"
             alt="Cafe Interior"
             className="w-full h-full object-cover opacity-60"
           />
@@ -491,7 +491,7 @@ export const Vision: React.FC = () => {
         <div className="absolute inset-0 z-10 flex items-end justify-center lg:justify-end pointer-events-none overflow-hidden">
           <img 
             ref={towerFaceRef}
-            src="/assets/face_cutout.png"
+            src="./assets/face_cutout.png"
             alt="Tribal Goddess Sculpture"
             className="w-[120%] md:w-[90%] lg:w-[75%] h-auto max-h-[140vh] object-contain translate-x-10 lg:translate-x-20 origin-bottom"
           />
@@ -503,7 +503,7 @@ export const Vision: React.FC = () => {
           className="absolute top-[10%] right-[5%] lg:top-[15%] lg:right-[10%] w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full border-4 border-[#D4AF37]/50 shadow-2xl overflow-hidden z-20 hidden md:block"
         >
           <img 
-            src="/assets/tower_inset.png" 
+            src="./assets/tower_inset.png" 
             alt="The Tower"
             className="w-full h-full object-cover scale-110"
           />

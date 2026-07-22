@@ -51,27 +51,27 @@ export const AboutUs: React.FC = () => {
       {/* Floating Elements */}
       <img
         ref={leaf1Ref}
-        src="/assets/leaf.png"
+        src="./assets/leaf.png"
         alt="Tropical Leaf"
         className="absolute top-[20%] left-[5%] w-32 md:w-48 object-contain opacity-70 z-0 pointer-events-none drop-shadow-xl"
       />
       <img
         ref={leaf2Ref}
-        src="/assets/leaf.png"
+        src="./assets/leaf.png"
         alt="Tropical Leaf"
         className="absolute bottom-[10%] right-[10%] w-24 md:w-40 object-contain opacity-50 z-0 pointer-events-none drop-shadow-xl"
         style={{ transform: 'rotate(80deg)' }}
       />
       <img
         ref={root1Ref}
-        src="/assets/root.png"
+        src="./assets/root.png"
         alt="Tree Root"
         className="absolute top-[40%] right-[5%] w-40 md:w-64 object-contain opacity-60 z-0 pointer-events-none drop-shadow-2xl"
         style={{ transform: 'rotate(-25deg)' }}
       />
       <img
         ref={root2Ref}
-        src="/assets/root.png"
+        src="./assets/root.png"
         alt="Tree Root"
         className="absolute bottom-[20%] left-[10%] w-32 md:w-48 object-contain opacity-40 z-0 pointer-events-none drop-shadow-lg"
         style={{ transform: 'rotate(15deg)' }}

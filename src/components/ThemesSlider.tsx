@@ -9,7 +9,7 @@ const themes = [
     title: 'Hero landmark',
     desc: 'Elevated thatch tower with the best sea view — the signature draw and skyline marker.',
     bg: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=2000',
-    png: '/assets/tower_inset.png',
+    png: './assets/tower_inset.png',
   },
   {
     id: '02',
@@ -17,7 +17,7 @@ const themes = [
     title: 'Beach-side land',
     desc: 'Outdoor seating under thatch & trees, around a tribal-dance centrepiece sculpture.',
     bg: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=2000',
-    png: '/assets/site_image.png',
+    png: './assets/site_image.png',
   },
   {
     id: '03',
@@ -25,7 +25,7 @@ const themes = [
     title: 'Immersive shelter',
     desc: 'Warli-painted, shaded interior nooks — cool, textured and photogenic all day.',
     bg: 'https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2000',
-    png: '/assets/tribal_face.png',
+    png: './assets/tribal_face.png',
   }
 ];
 

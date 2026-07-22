@@ -116,13 +116,13 @@ export const Hero: React.FC = () => {
       {/* Jungle Trees Background Layer */}
       <img 
         ref={leftTreeRef}
-        src="/assets/trees_left.png" 
+        src="./assets/trees_left.png" 
         alt="Jungle Trees Left" 
         className="absolute top-10 left-0 h-full w-auto object-cover z-10 origin-left"
       />
       <img 
         ref={rightTreeRef}
-        src="/assets/trees_right.png" 
+        src="./assets/trees_right.png" 
         alt="Jungle Trees Right" 
         className="absolute top-0 right-0 h-full w-auto object-cover z-10 origin-right"
       />
@@ -131,7 +131,7 @@ export const Hero: React.FC = () => {
       <div className="absolute bottom-[-10%] left-0 w-full h-[80vh] flex justify-center z-30 pointer-events-none">
         <img 
           ref={faceRef}
-          src="/assets/tribal_face.png" 
+          src="./assets/tribal_face.png" 
           alt="Tribal Face Sculpture" 
           className="h-full w-auto object-contain drop-shadow-2xl"
         />
