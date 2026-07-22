@@ -89,7 +89,7 @@ export const Hero: React.FC = () => {
       {/* Background Sky */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/assets/11.jpg)' }}
+        style={{ backgroundImage: 'url(./assets/11.jpg)' }}
       />
       
       {/* Text Overlay */}

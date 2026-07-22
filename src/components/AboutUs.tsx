@@ -43,7 +43,7 @@ export const AboutUs: React.FC = () => {
       {/* Background Image Texture */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: 'url(/assets/vision_page_bg.png)' }}
+        style={{ backgroundImage: 'url(./assets/vision_page_bg.png)' }}
       />
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 z-0 bg-[#090909]/70 pointer-events-none" />

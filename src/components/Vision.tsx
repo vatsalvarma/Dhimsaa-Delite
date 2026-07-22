@@ -248,7 +248,7 @@ export const Vision: React.FC = () => {
         {/* Background Image */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: 'url(/assets/vision_page_bg.png)' }}
+          style={{ backgroundImage: 'url(./assets/vision_page_bg.png)' }}
         />
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#090909] via-[#090909]/80 to-[#090909]/40 pointer-events-none" />
