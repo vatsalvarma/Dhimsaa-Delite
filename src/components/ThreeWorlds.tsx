@@ -66,7 +66,7 @@ export const ThreeWorlds: React.FC = () => {
     );
 
     // Fade in text content inside cards when they lift up
-    cardsRef.current.forEach((card, i) => {
+    cardsRef.current.forEach((card) => {
       const textBlock = card.querySelector('.card-text');
       if (textBlock) {
         tl.fromTo(textBlock, 

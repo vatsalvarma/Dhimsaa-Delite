@@ -6,7 +6,6 @@ import { Vision } from './components/Vision';
 import { Indoor } from './components/Indoor';
 import { ReasonsToVisit } from './components/ReasonsToVisit';
 import { CoupleParallax } from './components/CoupleParallax';
-import { SplitSlider } from './components/SplitSlider';
 import { WhyItWorks } from './components/WhyItWorks';
 import { ThreeWorlds } from './components/ThreeWorlds';
 import { Gallery } from './components/Gallery';

@@ -4,34 +4,31 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const moments = [
+type Moment = { id: number; title: string; desc: string; bg: string; fg?: string };
+const moments: Moment[] = [
   {
     id: 1,
     title: 'The Rooted Hand',
     desc: 'Earth cradling a living tree',
     bg: './assets/rs1.1.png',
-   
   },
   {
     id: 2,
     title: 'Whispering Falls',
     desc: 'Stone faces with water veils',
     bg: './assets/rs2.2.png',
-    
   },
   {
     id: 3,
     title: 'Matka Cascade',
     desc: 'A fountain of terracotta pots',
     bg: './assets/rs3.3.png',
-   
   },
   {
     id: 4,
     title: 'The Guardian',
     desc: 'Tribal headdress sentinel',
     bg: './assets/rs4.4.png',
-    
   }
 ];
 
@@ -59,6 +56,8 @@ export const ReasonsToVisit: React.FC = () => {
       const text = slide?.querySelector('.slide-text');
       const fg = slide?.querySelector('.slide-fg');
 
+      if (!slide || !bg || !text) return;
+
       tl.fromTo(slide, 
         { xPercent: 100, autoAlpha: 1 }, 
         { xPercent: 0, duration: 1, ease: 'none' },
@@ -70,18 +69,21 @@ export const ReasonsToVisit: React.FC = () => {
         { xPercent: 0, duration: 1, ease: 'none' }, 
         '<'
       )
-      // Foreground parallax (moves faster from right)
-      .fromTo(fg, 
-        { xPercent: 80 }, 
-        { xPercent: 0, duration: 1, ease: 'power2.out' }, 
-        '<'
-      )
       // Text fade in and slide
       .fromTo(text, 
         { x: 100, opacity: 0 }, 
         { x: 0, opacity: 1, duration: 0.8, ease: 'power2.out' }, 
         '<+0.2'
       );
+      
+      if (fg) {
+        // Foreground parallax (moves faster from right)
+        tl.fromTo(fg, 
+          { xPercent: 80 }, 
+          { xPercent: 0, duration: 1, ease: 'power2.out' }, 
+          '<'
+        );
+      }
     });
 
     return () => {
