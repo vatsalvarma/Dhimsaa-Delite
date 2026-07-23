@@ -394,10 +394,6 @@ export const Vision: React.FC = () => {
               Our brand marries the two: tribal rhythm and coffee ritual, both born in the same soil. Every wall, statue and cup tells that story.
             </p>
             
-            {/* Decorative Square */}
-            <div className="story-anim w-24 h-24 md:w-32 md:h-32 bg-[#EBE5DA] shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer flex items-center justify-center relative overflow-hidden group">
-              <div className="absolute inset-0 bg-[#D4AF37] opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-            </div>
           </div>
 
         </div>

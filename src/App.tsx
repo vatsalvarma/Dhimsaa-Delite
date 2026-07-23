@@ -8,6 +8,7 @@ import { ReasonsToVisit } from './components/ReasonsToVisit';
 import { CoupleParallax } from './components/CoupleParallax';
 import { WhyItWorks } from './components/WhyItWorks';
 import { ThreeWorlds } from './components/ThreeWorlds';
+import { OpenAir } from './components/OpenAir';
 import { Gallery } from './components/Gallery';
 import { Footer } from './components/Footer';
 
@@ -45,6 +46,7 @@ function App() {
       <WhyItWorks />
       <CoupleParallax />
       <ThreeWorlds />
+      <OpenAir />
       <Gallery />
       <Footer />
     </div>
