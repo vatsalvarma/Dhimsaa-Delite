@@ -427,7 +427,7 @@ export const Vision: React.FC = () => {
             <div className="w-[70%] md:w-[60%] lg:w-[75%] aspect-square rounded-full overflow-hidden shadow-2xl relative border-4 border-[#171717]">
               <img 
                 ref={siteImageRef}
-                src="./assets/site_image.png" 
+                src="./assets/site_image.jpeg" 
                 alt="Beachfront Bamboo Sculpture"
                 className="w-full h-full object-cover scale-[1.3]"
               />

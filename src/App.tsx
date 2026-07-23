@@ -4,10 +4,12 @@ import { Hero } from './components/Hero';
 import { AboutUs } from './components/AboutUs';
 import { Vision } from './components/Vision';
 import { Indoor } from './components/Indoor';
-import { ThreeWorldsSlider } from './components/ThreeWorldsSlider';
+import { ReasonsToVisit } from './components/ReasonsToVisit';
+import { CoupleParallax } from './components/CoupleParallax';
+import { SplitSlider } from './components/SplitSlider';
 import { WhyItWorks } from './components/WhyItWorks';
-import { DesignLanguage } from './components/DesignLanguage';
-import { SignatureMoments } from './components/SignatureMoments';
+import { ThreeWorlds } from './components/ThreeWorlds';
+import { Gallery } from './components/Gallery';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -40,10 +42,11 @@ function App() {
       <AboutUs />
       <Vision />
       <Indoor />
-      <ThreeWorldsSlider />
+      <ReasonsToVisit />
       <WhyItWorks />
-      <DesignLanguage />
-      <SignatureMoments />
+      <CoupleParallax />
+      <ThreeWorlds />
+      <Gallery />
       <Footer />
     </div>
   );

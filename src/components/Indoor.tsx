@@ -38,12 +38,17 @@ export const Indoor: React.FC = () => {
       }
     });
 
-    const finalPositions = [
-      { x: -140, y: 20, rotation: -15 },
-      { x: -60, y: -20, rotation: -5 },
-      { x: 20, y: 30, rotation: 8 },
-      { x: 90, y: -10, rotation: 2 },
-      { x: 160, y: 40, rotation: 18 }
+    const isMobile = window.innerWidth < 768;
+    const finalPositions = isMobile ? [
+      { x: -90, y: -120, rotation: -5 },
+      { x: 90, y: -40, rotation: 2 },
+      { x: -90, y: 40, rotation: -2 },
+      { x: 90, y: 120, rotation: 5 }
+    ] : [
+      { x: -350, y: 10, rotation: -4 },
+      { x: -110, y: -15, rotation: 2 },
+      { x: 110, y: 15, rotation: -2 },
+      { x: 350, y: -10, rotation: 4 }
     ];
 
     cardsRef.current.forEach((card, index) => {
@@ -73,11 +78,10 @@ export const Indoor: React.FC = () => {
   }, []);
 
   const cardImages = [
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000",
-    "https://images.unsplash.com/photo-1510127027582-74f07eefddf4?q=80&w=1000",
-    "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1000",
-    "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1000",
-    "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000"
+    "./assets/wall1 (1).jpeg",
+    "./assets/wall2.jpeg",
+    "./assets/wall3.jpeg",
+    "./assets/wall4.jpeg"
   ];
 
   return (
@@ -102,12 +106,37 @@ export const Indoor: React.FC = () => {
         {/* Floating Cards Container */}
         <div className="relative flex-grow w-full flex items-center justify-center pointer-events-none mt-8 pb-16">
           {cardImages.map((src, index) => (
-            <div
-              key={index}
-              ref={el => { if (el) cardsRef.current[index] = el; }}
-              className="absolute w-[180px] h-[240px] md:w-[220px] md:h-[300px] bg-[#171717] rounded-[20px] md:rounded-[24px] shadow-[0_30px_60px_rgba(0,0,0,0.8)] border border-[#333] overflow-hidden pointer-events-auto group cursor-pointer"
-              style={{ zIndex: index + 10 }}
-            >
+              <div
+                key={index}
+                ref={el => { if (el) cardsRef.current[index] = el; }}
+                className="absolute w-[180px] h-[240px] md:w-[220px] md:h-[300px] bg-[#171717] rounded-[20px] md:rounded-[24px] shadow-[0_30px_60px_rgba(0,0,0,0.8)] border border-[#333] overflow-hidden pointer-events-auto group cursor-pointer"
+                style={{ zIndex: index + 10 }}
+                onMouseMove={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  const x = e.clientX - rect.left;
+                  const y = e.clientY - rect.top;
+                  const centerX = rect.width / 2;
+                  const centerY = rect.height / 2;
+                  const rotateX = ((y - centerY) / centerY) * -15;
+                  const rotateY = ((x - centerX) / centerX) * 15;
+                  
+                  gsap.to(e.currentTarget, {
+                    rotationX: rotateX,
+                    rotationY: rotateY,
+                    transformPerspective: 1000,
+                    ease: 'power1.out',
+                    duration: 0.4
+                  });
+                }}
+                onMouseLeave={(e) => {
+                  gsap.to(e.currentTarget, {
+                    rotationX: 0,
+                    rotationY: 0,
+                    ease: 'power3.out',
+                    duration: 0.7
+                  });
+                }}
+              >
               {/* Glassmorphism / Noise layer */}
               <div className="absolute inset-0 opacity-[0.05] z-10 pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E")' }} />
               

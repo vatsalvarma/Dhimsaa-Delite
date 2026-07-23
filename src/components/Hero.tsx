@@ -98,19 +98,10 @@ export const Hero: React.FC = () => {
           initial={{ y: -100, opacity: 0, filter: 'blur(10px)' }}
           animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
-          className="text-7xl md:text-9xl font-bold text-accent tracking-tighter drop-shadow-2xl"
-          style={{ fontFamily: "'Inter', sans-serif" }}
+          className="text-7xl md:text-9xl font-black font-serif text-[#D4AF37] tracking-normal drop-shadow-[0_10px_25px_rgba(0,0,0,0.8)]"
         >
           Dhimsaa Delite
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="text-textMain text-xl md:text-2xl mt-4 font-light tracking-wide uppercase"
-        >
-          Premium Tribal Experience
-        </motion.p>
       </div>
 
       {/* Jungle Trees Background Layer */}

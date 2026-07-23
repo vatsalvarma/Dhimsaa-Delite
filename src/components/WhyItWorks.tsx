@@ -151,8 +151,8 @@ export const WhyItWorks: React.FC = () => {
             {/* The Image */}
             <img 
               ref={imageRef}
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200" 
-              alt="Tribal Sculpture"
+              src="./assets/tower_inset.png" 
+              alt="Tower Inset"
               className="absolute inset-0 w-full h-full object-cover z-10"
             />
           </div>
