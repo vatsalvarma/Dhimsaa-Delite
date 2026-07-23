@@ -4,11 +4,12 @@ import { Hero } from './components/Hero';
 import { AboutUs } from './components/AboutUs';
 import { Vision } from './components/Vision';
 import { Indoor } from './components/Indoor';
+import { ThreeWorldsSlider } from './components/ThreeWorldsSlider';
 import { WhyItWorks } from './components/WhyItWorks';
-import { ThemesSlider } from './components/ThemesSlider';
 import { DesignLanguage } from './components/DesignLanguage';
 import { SignatureMoments } from './components/SignatureMoments';
 import { Footer } from './components/Footer';
+
 function App() {
   useEffect(() => {
     const lenis = new Lenis({
@@ -39,8 +40,8 @@ function App() {
       <AboutUs />
       <Vision />
       <Indoor />
+      <ThreeWorldsSlider />
       <WhyItWorks />
-      <ThemesSlider />
       <DesignLanguage />
       <SignatureMoments />
       <Footer />
