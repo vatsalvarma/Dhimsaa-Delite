@@ -41,12 +41,12 @@ function App() {
       <Hero />
       <AboutUs />
       <Vision />
+      <OpenAir />
       <Indoor />
       <ReasonsToVisit />
       <WhyItWorks />
       <CoupleParallax />
       <ThreeWorlds />
-      <OpenAir />
       <Gallery />
       <Footer />
     </div>
