@@ -136,12 +136,6 @@ export const ReasonsToVisit: React.FC = () => {
               </p>
             </div>
 
-            {/* Foreground Image Layer */}
-            <img 
-              src={moment.fg} 
-              alt={moment.title}
-              className="slide-fg absolute bottom-0 right-[5%] h-[80%] md:h-[95%] w-auto object-contain z-30 drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)] pointer-events-none"
-            />
           </div>
         ))}
       </div>
